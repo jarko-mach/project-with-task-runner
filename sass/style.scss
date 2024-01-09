@@ -3,10 +3,31 @@ $font-text: 'Merriweather', serif;
 $font-logo: 'Carattere', cursive;
 $color-white: #ffffff;
 $color-logo: #ffd438;
+$color-light: #7a7a7a;
 
 * {
     margin: 0;
     padding: 0;
+}
+
+h2 {
+    font-family: $font-header;
+    font-size: 50px;
+    font-weight: 800;
+    text-transform: uppercase;
+    transform: scale(1.1, 1);
+}
+
+h2::after {
+    content: "Proin iaculis purus consequat sem cure.";
+    display: block;
+    text-transform: none;
+    font-family: $font-text;
+    font-style: italic;
+    font-size: 18px;
+    font-weight: 300;
+    color: $color-light;
+    margin-top: 10px;
 }
 
 .navigation {
@@ -23,17 +44,18 @@ $color-logo: #ffd438;
         }
     }
 
-    .container {
+    .container-fluid {
         position: absolute;
         top: 50px;
-        left: 50px;
     }
 
     .row {
         display: flex;
+        flex-direction: row;
         align-items: center;
         position: relative;
     }
+
     .logo {
         font-family: $font-logo;
         font-size: 30px;
@@ -55,18 +77,18 @@ $color-logo: #ffd438;
         justify-content: end;
 
         li {
-            margin-left: 20px;
+            margin-left: 50px;
             text-transform: uppercase;
         }
     }
-}
+
 
     .welcome {
         color: $color-white;
         text-align: center;
         position: absolute;
         top: 250px;
-        
+
         h1 {
             font-family: $font-header;
             font-size: 70px;
@@ -75,12 +97,14 @@ $color-logo: #ffd438;
             margin: 40px 0 50px 0;
             transform: scale(1.1, 1)
         }
+
         p {
             font-family: $font-text;
             font-style: italic;
             font-size: 30px;
             font-weight: 300;
         }
+
         button {
             width: 245px;
             height: 65px;
@@ -92,4 +116,10 @@ $color-logo: #ffd438;
             cursor: pointer;
         }
     }
+}
 
+.services {
+    text-align: center;
+    padding: 70px 100px;
+
+}
