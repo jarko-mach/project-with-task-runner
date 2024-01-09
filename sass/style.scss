@@ -67,6 +67,10 @@ p {
     padding: 100px;
 }
 
+.containerBox-footer {
+    padding: 40px 100px;
+}
+
 .navigation {
 
     position: relative;
@@ -180,6 +184,7 @@ p {
     h3 {
         line-height: 1.1;
     }
+
     span {
         font-family: $font-text;
         font-size: 14px;
@@ -189,5 +194,69 @@ p {
 }
 
 footer {
-    height: 300px;
+    height: 120px;
+    background-color: aquamarine;
+
+    .containerBox-footer {
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-start;
+        align-items: center;
+    }
+
+    p {
+        font-family: $font-header;
+        font-size: 14px;
+        font-weight: 600;
+    }
+
+    .logos {
+        margin-left: 150px;
+        display: flex;
+    }
+
+    .logoCircle {
+        width: 40px;
+        height: 40px;
+        background-color: black;
+        border-radius: 50%;
+        display: flex;
+        margin-left: 20px;
+    }
+
+    .logoCircle span {
+        font-size: 20px;
+        color: white;
+        margin: auto;
+    }
+}
+
+@media (max-width: 768px) {
+    .containerBox {
+        padding: 10px;
+    }
+}
+
+@media (min-width: 768px) {
+    .containerBox {
+        padding: 40px;
+    }
+}
+
+@media (min-width: 992px) {
+    .containerBox {
+        padding: 60px;
+    }
+}
+
+@media (min-width: 1200px) {
+    .containerBox {
+        padding: 80px;
+    }
+}
+
+@media (min-width: 1400px) {
+    .containerBox {
+        padding: 100px;
+    }
 }
