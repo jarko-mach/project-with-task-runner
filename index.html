@@ -4,13 +4,14 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+        integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
         href="https://fonts.googleapis.com/css2?family=Carattere&family=Merriweather:ital,wght@0,300;0,400;1,400&family=Roboto:wght@400;500;700;900&display=swap"
         rel="stylesheet">
-
     <link rel="stylesheet" href="./vendor/bootstrap-grid.css">
     <link rel="stylesheet" href="./css/style.css">
     <title>landing page</title>
@@ -23,8 +24,8 @@
         </div>
         <div class="container-fluid">
             <div class="row">
-                <div class="col-2"> </div>
-                <div class="col-1">
+                <div class="col-1"> </div>
+                <div class="col-3">
                     <p class="logo">Golden</p>
                 </div>
                 <div class="col-7">
@@ -37,7 +38,7 @@
                     </ul>
                 </div>
                 <div class="welcome">
-                    <p>Welcome To Our Studio!</p>
+                    <h6>Welcome To Our Studio!</h6>
                     <h1>it's nice to meet you</h1>
                     <button type="button">Tell me more</button>
                 </div>
@@ -45,28 +46,95 @@
         </div>
     </nav>
     <section class="services">
-        <div class="s">
-
-            <div class="container">
+        <div class="container">
+            <div class="containerBox">
                 <h2>Services</h2>
                 <div class="row">
                     <div class="col-4">
-                    <h3>E-Commerce</h3>
-                    <p>Dui ut ornare lectus sit amet est placerat in egestas. Fermentum posuere urna nec tincidunt praesent semper feugiat nibh.</p>
+                        <div class="ringContainer">
+                            <div class="ring">
+                                <span class="fa-solid fa-basket-shopping"></span>
+                            </div>
+                        </div>
+                        <h3>E-Commerce</h3>
+                        <p>Dui ut ornare lectus sit amet est placerat in egestas. Fermentum posuere urna nec tincidunt
+                            praesent semper feugiat nibh.</p>
+                    </div>
+                    <div class="col-4">
+                        <div class="ringContainer">
+                            <div class="ring">
+                                <span class="fa-solid fa-laptop"></span>
+                            </div>
+                        </div>
+                        <h3>Responsive Web</h3>
+                        <p>Ullamcorper malesuada proin libero nunc. Massa placerat duis ultricies lacus sed turpis
+                            tincidunt id aliquet.</p>
+                    </div>
+                    <div class="col-4">
+                        <div class="ringContainer">
+                            <div class="ring">
+                                <span class="fa-solid fa-lock"></span>
+                            </div>
+                        </div>
+                        <h3>Web Security</h3>
+                        <p>Ullamcorper malesuada proin libero nunc. Massa placerat duis ultricies lacus sed turpis
+                            tincidunt id aliquet.</p>
+                    </div>
                 </div>
-                <div class="col-4">
-                    <h3>E-Commerce</h3>
-                    <p>Ullamcorper malesuada proin libero nunc. Massa placerat duis ultricies lacus sed turpis tincidunt id aliquet.</p>
-                </div>
-                <div class="col-4">
-                    <h3>E-Commerce</h3>
-                    <p>Ullamcorper malesuada proin libero nunc. Massa placerat duis ultricies lacus sed turpis tincidunt id aliquet.</p>
-                </div>
-            </div>
-
             </div>
         </div>
     </section>
+
+    <section class="portfolio">
+        <div class="container">
+            <div class="containerBox">
+                <h2>our portfolio</h2>
+                <div class="row g-5">
+                    <div class="col-4">
+                        <div class="infoBox">
+                            <img src="./images/portfolio-1.gif" alt="Ebony & Ivory">
+                            <h3>Ebony & Ivory<br><span>Branding</span>
+                            </h3>
+                        </div>
+                    </div>
+                    <div class="col-4">
+                        <div class="infoBox">
+                            <img src="./images/portfolio-2.gif" alt="Smart Stationary">
+                            <h3>Smart Stationary<br><span>Print Design</h3>
+                        </div>
+                    </div>
+                    <div class="col-4">
+                        <div class="infoBox">
+                            <img src="./images/portfolio-3.gif" alt="Clever Poster">
+                            <h3>Clever Poster<br><span>Print Design</h3>
+                        </div>
+                    </div>
+                    <div class="col-4">
+                        <div class="infoBox">
+                            <img src="./images/portfolio-4.gif" alt="Vinyl Record">
+                            <h3>Vinyl Record<br><span>Product Mock-Up</span>
+                            </h3>
+                        </div>
+                    </div>
+                    <div class="col-4">
+                        <div class="infoBox">
+                            <img src="./images/portfolio-5.gif" alt="Treehouse Template">
+                            <h3>Treehouse Template<br><span>Web Design</h3>
+                        </div>
+                    </div>
+                    <div class="col-4">
+                        <div class="infoBox">
+                            <img src="./images/portfolio-6.gif" alt="Burned Logo">
+                            <h3>Burned Logo<br><span>Branding</h3>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <footer>
+        <p>Footer</p>
+    </footer>
 </body>
 
 </html>
