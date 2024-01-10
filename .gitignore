@@ -1,6 +1,9 @@
 # design files
 design/
 
+# css files
+css/
+
 # Logs
 logs
 *.log
