@@ -199,8 +199,6 @@ p {
 
 footer {
     height: 120px;
-    background-color: aquamarine;
-    position: relative;
 
     .logoCircle {
         width: 40px;
@@ -208,6 +206,7 @@ footer {
         background-color: black;
         border-radius: 50%;
         display: flex;
+        margin: 5px 0;
     }
 
     .logoCircle span {
@@ -215,12 +214,8 @@ footer {
         color: white;
         margin: auto;
     }
-
-    .info {
-        position: absolute;
-        top: 50%;
-        left: 50%;
-        transform: translate(-50%, -50%);
+    .container {
+        padding: 40px 100px 0 100px;
     }
 }
 
