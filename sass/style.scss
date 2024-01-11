@@ -161,7 +161,7 @@ p {
     }
 
     span {
-        font-size: 44px;
+        font-size: 40px;
         color: $color-logo;
         margin: auto;
     }
@@ -172,9 +172,11 @@ p {
     text-align: center;
     background-color: $color-background;
 
-    .infoBox {
+    .boxItem {
         background-color: $color-white;
-        padding: 70px 0 10px 0;
+        padding: 0 0 10px 0;
+        // background-color: #cd1515;
+        margin-top: 70px;
     }
 
     img {
